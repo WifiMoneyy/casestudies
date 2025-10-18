@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sebastian J - Professional Portfolio">
+    <meta name="author" content="Sebastian J">
+    <title>Sebastian J</title>
+
+    <!-- Preload Critical Resources -->
+    <link rel="preconnect" href="https://cdn.tailwindcss.com">
+
+    <!-- Tailwind CSS CDN -->
+    <!-- Note: Using CDN for simplicity in this beginner-friendly setup.
+         For production optimization, consider switching to a build process with purged CSS. -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            dark: '#1d1d1f',
+                            gray: '#86868b',
+                            lightgray: '#f5f5f7',
+                            blue: '#0071e3',
+                            darkblue: '#06c',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'SF Pro Display', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+                    },
+                    fontDisplay: 'swap',
+                    animation: {
+                        'fade-in': 'fadeIn 1.2s ease-out',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Custom Styles -->
+    <style type="text/tailwindcss">
+        @layer base {
+            html {
+                scroll-behavior: smooth;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+            body {
+                @apply bg-apple-dark text-apple-lightgray antialiased;
+            }
+            @font-face {
+                font-display: swap;
+            }
+        }
+        @layer utilities {
+            .text-balance {
+                text-wrap: balance;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header Section -->
+    <header class="w-full px-4 py-12 sm:px-6 sm:py-20 md:py-32 lg:py-40">
+        <div class="max-w-7xl mx-auto">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight text-white animate-fade-in text-balance">
+                Sebastian J
+            </h1>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="w-full px-4 pb-12 sm:px-6 sm:pb-20 md:pb-24">
+        <div class="max-w-4xl mx-auto space-y-16 sm:space-y-24 md:space-y-32">
+
+            <!-- Case Study #1 -->
+            <article class="space-y-6 sm:space-y-8 animate-fade-in">
+                <!-- Title -->
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight text-balance">
+                    Scaling a Remote CSM Training Startup from $300K/month → $500K/month Using AI-Powered Ad Creative Automation
+                </h2>
+
+                <!-- Background & Goal -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Background & Goal</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose space-y-3 sm:space-y-4">
+                        <p>A B2C startup generating $300K/month in revenue was experiencing a critical bottleneck: the founder was spending 10+ hours per week manually creating ad creatives for their customer success manager (CSM) training program.</p>
+                        <p>The goal was clear: automate ad creative production to free up the founder's time and scale revenue without scaling workload.</p>
+                    </div>
+                </section>
+
+                <!-- Offer & Niche Optimization -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Offer & Niche Optimization</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose">
+                        <p>The core offer—remote CSM training—was already validated and profitable. The challenge wasn't the offer itself, but the operational capacity to scale marketing efforts without overwhelming the founder.</p>
+                    </div>
+                </section>
+
+                <!-- Lead Generation Systems -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Lead Generation Systems</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose space-y-3 sm:space-y-4">
+                        <p>Built an N8N automation workflow integrated with AI agents that transformed the ad creative production process:</p>
+                        <ul class="space-y-2 pl-5 sm:pl-6">
+                            <li class="list-disc">AI-powered copywriting agents generated multiple ad copy variations</li>
+                            <li class="list-disc">AI image generation produced on-brand visuals automatically</li>
+                            <li class="list-disc">System delivered 5-10 complete ad creative options directly to Slack</li>
+                            <li class="list-disc">Founder could review and approve in minutes instead of spending hours creating from scratch</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Marketing Funnel/Copy/Automation -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Marketing Funnel/Copy/Automation</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose space-y-3 sm:space-y-4">
+                        <p>The automation integrated seamlessly with existing marketing infrastructure:</p>
+                        <ul class="space-y-2 pl-5 sm:pl-6">
+                            <li class="list-disc">Connected to Slack for instant review and feedback</li>
+                            <li class="list-disc">Maintained brand consistency through trained AI parameters</li>
+                            <li class="list-disc">Enabled rapid testing of multiple creative angles</li>
+                            <li class="list-disc">Reduced manual creative production time by over 90%</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Client Success Systems -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Client Success Systems</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose">
+                        <p>With 10+ hours per week freed up, the founder redirected focus to strategic growth initiatives and client success optimization, creating a compounding effect on revenue growth.</p>
+                    </div>
+                </section>
+
+                <!-- Results -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Results</h3>
+                    <div class="text-base sm:text-lg leading-relaxed max-w-prose space-y-3 sm:space-y-4">
+                        <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-2 sm:space-y-3 transition-all duration-300 hover:border-zinc-700 focus:ring-2 focus:ring-emerald-500 focus-visible:outline-none" tabindex="0">
+                            <p class="text-emerald-500 font-semibold text-lg sm:text-xl">$300K/month → $500K/month</p>
+                            <p class="text-apple-gray text-sm sm:text-base">67% revenue increase in 90 days</p>
+                        </div>
+                        <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-2 sm:space-y-3 transition-all duration-300 hover:border-zinc-700 focus:ring-2 focus:ring-emerald-500 focus-visible:outline-none" tabindex="0">
+                            <p class="text-emerald-500 font-semibold text-lg sm:text-xl">10+ hours/week saved</p>
+                            <p class="text-apple-gray text-sm sm:text-base">Founder time redirected to strategic growth</p>
+                        </div>
+                        <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-2 sm:space-y-3 transition-all duration-300 hover:border-zinc-700 focus:ring-2 focus:ring-emerald-500 focus-visible:outline-none" tabindex="0">
+                            <p class="text-emerald-500 font-semibold text-lg sm:text-xl">3-5x creative output increase</p>
+                            <p class="text-apple-gray text-sm sm:text-base">More ads tested = faster optimization</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Why It Worked -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Why It Worked</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose space-y-3 sm:space-y-4">
+                        <ul class="space-y-2 pl-5 sm:pl-6">
+                            <li class="list-disc"><strong class="text-white">Identified the right bottleneck:</strong> Creative production was the constraint preventing scale</li>
+                            <li class="list-disc"><strong class="text-white">AI used strategically:</strong> Not replacing strategy, but automating execution</li>
+                            <li class="list-disc"><strong class="text-white">Built for the existing workflow:</strong> Slack integration meant zero learning curve</li>
+                            <li class="list-disc"><strong class="text-white">Compounding benefits:</strong> More creatives + more founder time = accelerated growth</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Takeaway -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Takeaway</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose">
+                        <p class="italic border-l-4 border-emerald-500 pl-4 sm:pl-6 py-2">
+                            The fastest path to scale isn't always doing more—it's automating what's holding you back. By eliminating the creative production bottleneck, we unlocked 67% revenue growth in 90 days.
+                        </p>
+                    </div>
+                </section>
+            </article>
+
+            <!-- Divider -->
+            <div class="border-t border-zinc-800"></div>
+
+            <!-- Case Study #2 -->
+            <article class="space-y-6 sm:space-y-8 animate-fade-in">
+                <!-- Title -->
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold text-white tracking-tight leading-tight text-balance">
+                    Securing $200K+ in Business Funding for a Husband-Wife House Flipping Team in Under 60 Days
+                </h2>
+
+                <!-- Background & Goal -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Background & Goal</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose space-y-3 sm:space-y-4">
+                        <p>A husband-wife house flipping team needed $70K in business funding to scale their operations. The problem? They had no formal business structure—no LLC, no business credit profile, and therefore no way to qualify for business financing.</p>
+                        <p>The goal was to secure funding quickly while establishing the proper business infrastructure to enable long-term growth.</p>
+                    </div>
+                </section>
+
+                <!-- Offer & Niche Optimization -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Offer & Niche Optimization</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose">
+                        <p>Rather than treating this as purely a funding challenge, we identified the root problem: without business entities, they couldn't access business credit. The solution required building the foundation first, then securing capital.</p>
+                    </div>
+                </section>
+
+                <!-- Lead Generation Systems -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Lead Generation Systems</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose space-y-3 sm:space-y-4">
+                        <p>Established proper business infrastructure at speed:</p>
+                        <ul class="space-y-2 pl-5 sm:pl-6">
+                            <li class="list-disc">Set up 2 separate LLCs for their house flipping operations</li>
+                            <li class="list-disc">Filed all required paperwork in under a week</li>
+                            <li class="list-disc">Created business credit profiles for both entities</li>
+                            <li class="list-disc">Positioned them to access business financing immediately</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Marketing Funnel/Copy/Automation -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Marketing Funnel/Copy/Automation</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose space-y-3 sm:space-y-4">
+                        <p>Developed a strategic funding acquisition process:</p>
+                        <ul class="space-y-2 pl-5 sm:pl-6">
+                            <li class="list-disc">Targeted both national banks and local credit unions</li>
+                            <li class="list-disc">Optimized applications for each lender's specific criteria</li>
+                            <li class="list-disc">Leveraged personal credit strategically to unlock business credit</li>
+                            <li class="list-disc">Created a systematic approach to maximize approval rates</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Sales Enablement & Coaching -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Sales Enablement & Coaching</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose">
+                        <p>Coached the team through the entire funding process, from entity formation through application submission and lender negotiations. Provided frameworks for presenting their house flipping business in the most favorable light to lenders.</p>
+                    </div>
+                </section>
+
+                <!-- Client Success Systems -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Client Success Systems</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose">
+                        <p>Beyond securing immediate funding, established systems for ongoing business credit building and future capital access. Set up infrastructure that would continue generating value long after the initial funding goal was met.</p>
+                    </div>
+                </section>
+
+                <!-- Results -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Results</h3>
+                    <div class="text-base sm:text-lg leading-relaxed max-w-prose space-y-3 sm:space-y-4">
+                        <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-2 sm:space-y-3 transition-all duration-300 hover:border-zinc-700 focus:ring-2 focus:ring-emerald-500 focus-visible:outline-none" tabindex="0">
+                            <p class="text-emerald-500 font-semibold text-lg sm:text-xl">$70K goal → $200K+ delivered</p>
+                            <p class="text-apple-gray text-sm sm:text-base">Nearly 3x the original funding target</p>
+                        </div>
+                        <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-2 sm:space-y-3 transition-all duration-300 hover:border-zinc-700 focus:ring-2 focus:ring-emerald-500 focus-visible:outline-none" tabindex="0">
+                            <p class="text-emerald-500 font-semibold text-lg sm:text-xl">2 LLCs established in 7 days</p>
+                            <p class="text-apple-gray text-sm sm:text-base">Complete business infrastructure built from scratch</p>
+                        </div>
+                        <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl sm:rounded-2xl p-4 sm:p-6 space-y-2 sm:space-y-3 transition-all duration-300 hover:border-zinc-700 focus:ring-2 focus:ring-emerald-500 focus-visible:outline-none" tabindex="0">
+                            <p class="text-emerald-500 font-semibold text-lg sm:text-xl">Funded in under 60 days</p>
+                            <p class="text-apple-gray text-sm sm:text-base">From no business structure to $200K+ capital secured</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Why It Worked -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Why It Worked</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose space-y-3 sm:space-y-4">
+                        <ul class="space-y-2 pl-5 sm:pl-6">
+                            <li class="list-disc"><strong class="text-white">Solved the root problem:</strong> No LLC = no business credit. Built the foundation first</li>
+                            <li class="list-disc"><strong class="text-white">Moved fast:</strong> 7 days to entity formation vs. weeks of delay many experience</li>
+                            <li class="list-disc"><strong class="text-white">Targeted the right lenders:</strong> National + local approach maximized approval odds</li>
+                            <li class="list-disc"><strong class="text-white">Optimized each application:</strong> Customized positioning for each lender's criteria</li>
+                            <li class="list-disc"><strong class="text-white">Built for the future:</strong> Established systems for ongoing capital access, not just one-time funding</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Takeaway -->
+                <section class="space-y-3 sm:space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-semibold text-white">Takeaway</h3>
+                    <div class="text-base sm:text-lg text-apple-gray leading-relaxed max-w-prose">
+                        <p class="italic border-l-4 border-emerald-500 pl-4 sm:pl-6 py-2">
+                            Speed and foundation go hand in hand. By addressing the structural problem (no business entities) with urgency, we unlocked 3x the funding goal in under 60 days. Sometimes the fastest path forward requires building the right foundation first.
+                        </p>
+                    </div>
+                </section>
+            </article>
+
+        </div>
+    </main>
+</body>
+</html>

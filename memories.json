@@ -1,0 +1,37 @@
+{
+  "memories": [
+    {
+      "id": "mem_1760817011854_9i6hmc1er",
+      "content": "Case studies project: Static HTML/CSS/Tailwind site, dark Apple-inspired theme, 2 case studies + name display, deploying to Vercel, user unfamiliar with all tech",
+      "type": "general",
+      "tags": [
+        "general",
+        "project",
+        "case-studies",
+        "requirements"
+      ],
+      "timestamp": "2025-10-18T19:50:11.853Z",
+      "accessCount": 0,
+      "lastAccessed": "2025-10-18T19:50:11.853Z",
+      "lastVerified": "2025-10-18T19:50:11.853Z",
+      "status": "fresh"
+    },
+    {
+      "id": "mem_1760817377308_ihpd0d588",
+      "content": "Project: case-studies website - Static HTML/CSS/Tailwind showcase for case studies, targeting recruiters, needs dark Apple-style theme, deploy to Vercel",
+      "type": "general",
+      "tags": [
+        "general",
+        "project-init",
+        "case-studies",
+        "html-tailwind"
+      ],
+      "timestamp": "2025-10-18T19:56:17.308Z",
+      "accessCount": 0,
+      "lastAccessed": "2025-10-18T19:56:17.308Z",
+      "lastVerified": "2025-10-18T19:56:17.308Z",
+      "status": "fresh"
+    }
+  ],
+  "lastUpdated": "2025-10-18T19:56:17.308Z"
+}
